@@ -15,9 +15,11 @@ data "aws_ami" "ubuntu_focal" {
 }
 
 output "ubuntu_focal_arn" {
+  description = "The Amazon Machine Image (AMI) of the Ubuntu 20.04 LTS (Focal Fossa) Container Image."
   value = data.aws_ami.ubuntu_focal.arn
 }
 
 output "ubuntu_focal_id" {
+  description = "The Instance-ID of the Ubuntu 20.04 LTS (Focal Fossa) Container Image."
   value = data.aws_ami.ubuntu_focal.id
 }
